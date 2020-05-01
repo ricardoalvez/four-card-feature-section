@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+/* CSS RESET  */
+
+a {
+     text-decoration: none;
+}
+
+* {
+     list-style: none;
+     text-decoration: none;
+     margin: 0;
+     padding: 0;
+     border: 0;
+     color: #23292e;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     outline: 0;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+/* CONTAINER */
+
+.container {
+     width: 100%;
+     padding: 0 30px;
+     margin-right: auto;
+     margin-left: auto
+}
+
+@media (min-width:576px) {
+     .container {
+          max-width: 540px
+     }
+}
+
+@media (min-width:768px) {
+     .container {
+          max-width: 720px;
+     }
+}
+
+@media (min-width:992px) {
+     .container {
+          max-width: 960px;
+     }
+}
+
+@media (min-width:1300px) {
+     .container {
+          max-width: 1240px;
+     }
+}
+
+.header {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-items: center;
+     font-size: 13px;
+     text-align: center;
+     font-weight: 400;
+     padding: 80px 30px;
+}
+
+.header h1 {
+     font-weight: 100;
+     color: #4c4d61;
+}
+
+.header span {
+     font-weight: 400;
+     color: #4c4d61;
+}
+
+.header p {
+     color: gray;
+     padding-top: 20px;
+}
+
+@media (min-width:992px) {
+     .header {
+          font-size: 16px;
+     }
+
+     p {
+          width: 600px;
+     }
+}
+
+/* Cards */
+.cards-container {
+     display: flex;
+     flex-flow: row;
+     justify-content: center;
+     align-items: center;
+}
+
+.card {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     flex-wrap: wrap;
+     background-color: #FFF;
+     padding: 20px;
+     margin-bottom: 25px;
+     border-radius: 10px;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+     height: 200px;
+     width: 290px;
+   }
+
+.card_img {
+     align-self: flex-end;
+     padding-top: 20px;
+}
+
+.cards-container .card:first-child {
+     border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.cards-container .card:last-child {
+     border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.cards-container_meio .card:first-child {
+     border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.cards-container_meio .card:last-child {
+     border-top: 4px solid hsl(212, 86%, 64%);
+}
+
